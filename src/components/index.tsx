@@ -2,3 +2,8 @@ export * from './Header';
 export * from './Footer';
 export * from './PayPalBtn';
 export * from './Github';
+export * from './SubHeader';
+export * from './NumberItem';
+export * from './Selector';
+export * from './Loading';
+export * from './Panel';
