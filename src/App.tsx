@@ -46,44 +46,18 @@ export const App = () => {
             <Panel>
               <AnimatePresence mode='wait'>
                 <motion.div className='my-10 space-y-10'>
-                  {aiResponse && <AIResponse aiResponse={aiResponse} finalResponse={finalResponse} />}
+                  {aiResponse ? (
+                    <AIResponse aiResponse={aiResponse} finalResponse={finalResponse} />
+                  ) : (
+                    <p className='text-lg font-medium md:ml-32 md:text-xl text-slate-200'>
+                      ✨ Aquí tendrás la solución ✨
+                    </p>
+                  )}
                 </motion.div>
               </AnimatePresence>
             </Panel>
           </div>
         </div>
-
-        {/* <div className='w-full max-w-xl'>
-          <div className='flex items-center mt-10 space-x-3'>
-            <NumberItem number={1} />
-            <p className='flex font-medium text-left align-center'>Escribe el planteamiento del problema</p>
-          </div>
-          <TextareaAutosize
-            value={userPrompt}
-            onChange={(e) => setUserPrompt(e.target.value)}
-            className='w-full px-4 py-2 mt-2 text-sm text-gray-700 border border-slate-100 rounded-xl focus:outline-none focus:border-red-800'
-            placeholder='Ejemplo: Un objeto de 2kg cae desde una altura de 10m. ¿Cuál es su velocidad final?'
-          />
-          <div className='flex items-center mt-2 space-x-3'>
-            <NumberItem number={2} />
-            <p className='flex font-medium text-left align-center'>Selecciona el grado</p>
-          </div>
-
-          <div className='flex justify-start w-full mt-4'>
-            <Selector onSelection={handleSelection} /> <span className='mx-2 mt-1'>de Educación Secundaria</span>
-          </div>
-
-          {!loading && <ResolveBtn userPrompt={userPrompt} onGenerateSolution={generateSolution} />}
-          {loading && <Loading />}
-        </div>
-
-        <Panel>
-          <AnimatePresence mode='wait'>
-            <motion.div className='my-10 space-y-10'>
-              {aiResponse && <AIResponse aiResponse={aiResponse} finalResponse={finalResponse} />}
-            </motion.div>
-          </AnimatePresence>
-        </Panel> */}
       </main>
 
       <Footer />
