@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Github } from './';
 
 export const Header = () => (
   <header className='flex items-center justify-between w-full px-2 pb-3 mt-2 shadow-sm shadow-slate-600 show sm:px-4'>

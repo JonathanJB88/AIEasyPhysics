@@ -1,5 +1,3 @@
-import { Github } from './';
-
 export const SubHeader = () => (
   <>
     <h1 className='text-2xl font-bold text-red-600 sm:text-5xl max-w-1xl'>Física Fácil</h1>
