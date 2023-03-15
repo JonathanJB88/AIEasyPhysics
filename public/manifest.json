@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fisica Facil",
+  "name": "Fisica Facil, una herramienta para aprender Fisica",
   "icons": [
     {
       "src": "favicon.ico",

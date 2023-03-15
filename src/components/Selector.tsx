@@ -21,7 +21,7 @@ export const Selector = ({ onSelection }: Props) => {
     if (selectedOption) {
       onSelection(selectedOption);
     }
-  }, [selectedOption]);
+  }, [selectedOption, onSelection]);
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedOption(event.target.value);
